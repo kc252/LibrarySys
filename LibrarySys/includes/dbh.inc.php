@@ -1,9 +1,9 @@
 <?php
 
-$db = "localhost"
+$db = "localhost";
 $dbUserName = "root";
-$dbPassword = "";
-$dbName = "librarysys";
+$dbPassword = '';
 
-$conn = mysqli_connect($db, $dbUserName, $dbPassword, $dbName);
+$conn = mysqli_connect($db, $dbUserName, $dbPassword);
+mysqli_select_db($conn, "librarysys");
 
