@@ -5,7 +5,22 @@
 
 	<section class="main-container">
 		<div class="main-wrapper">
-			<h2>Library</h2>
+
+			<form>
+
+			<input type="text" name="search" placeholder="Search">
+			<button type="submit" name="submit-search"></button>
+
+			</form>
+		
+			<?php 
+				if(isset($_SESSION['username'])){
+
+					echo "You are logged in!";
+
+				}
+
+			 ?>
 		</div>
 	</section>
 
