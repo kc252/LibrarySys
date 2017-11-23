@@ -21,8 +21,14 @@ session_start();
 					<li>
 						<a href="index.php">Home</a>
 					</li>
+
 				</ul>
+
+
+
 				<div class = "nav-login">
+
+					<a href="search.php">Search</a>
 
 					<?php
 						if (isset($_SESSION['username'])) {
@@ -35,7 +41,7 @@ session_start();
 						else {
 
 						echo '<form action="includes/login.inc.php" method="POST">
-						<input type="text" name="username" placeholder="Username/Email">
+						<input type="text" name="username" placeholder="Username">
 						<input type="password" name="password" placeholder="Password">
 						<button type="submit" name="submit">Login</button>
 						</form>
@@ -49,8 +55,10 @@ session_start();
 				</div>
 			</div>
 
-
 		</nav>
 
 
+
+
 	</header>
+
